@@ -98,6 +98,7 @@ namespace LPDA
                     {
                         password_error_massege.Visible = true;
                         password_erroe_picture.Visible = true;
+                        // Optionally, you can clear the username and password fields
                         password_txet_box.Clear();
                         password_txet_box.Focus();
                         break;
