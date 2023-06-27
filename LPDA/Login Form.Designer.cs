@@ -30,17 +30,19 @@
         {
             this.user_name_error_massege = new System.Windows.Forms.Label();
             this.password_error_massege = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.login_butten = new System.Windows.Forms.Button();
             this.user_name_text_box = new System.Windows.Forms.TextBox();
             this.password_txet_box = new System.Windows.Forms.TextBox();
             this.user_name_correct_picture = new System.Windows.Forms.PictureBox();
             this.password_erroe_picture = new System.Windows.Forms.PictureBox();
             this.user_name_error_picture = new System.Windows.Forms.PictureBox();
             this.login_form_background_picture = new System.Windows.Forms.PictureBox();
+            this.password_correct_picture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.user_name_correct_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.password_erroe_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_name_error_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.login_form_background_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.password_correct_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // user_name_error_massege
@@ -70,18 +72,18 @@
             this.password_error_massege.Text = "Enter The Valid User Password";
             this.password_error_massege.Visible = false;
             // 
-            // button1
+            // login_butten
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(340, 617);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(372, 37);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "L O G I N ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.login_butten.BackColor = System.Drawing.SystemColors.Highlight;
+            this.login_butten.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.login_butten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_butten.ForeColor = System.Drawing.Color.Snow;
+            this.login_butten.Location = new System.Drawing.Point(340, 617);
+            this.login_butten.Name = "login_butten";
+            this.login_butten.Size = new System.Drawing.Size(372, 37);
+            this.login_butten.TabIndex = 4;
+            this.login_butten.Text = "L O G I N ";
+            this.login_butten.UseVisualStyleBackColor = false;
             // 
             // user_name_text_box
             // 
@@ -146,15 +148,27 @@
             this.login_form_background_picture.TabIndex = 0;
             this.login_form_background_picture.TabStop = false;
             // 
+            // password_correct_picture
+            // 
+            this.password_correct_picture.Image = global::LPDA.Properties.Resources.ok;
+            this.password_correct_picture.Location = new System.Drawing.Point(299, 497);
+            this.password_correct_picture.Name = "password_correct_picture";
+            this.password_correct_picture.Size = new System.Drawing.Size(5, 59);
+            this.password_correct_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.password_correct_picture.TabIndex = 7;
+            this.password_correct_picture.TabStop = false;
+            this.password_correct_picture.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1624, 881);
+            this.Controls.Add(this.password_correct_picture);
             this.Controls.Add(this.user_name_correct_picture);
             this.Controls.Add(this.password_txet_box);
             this.Controls.Add(this.user_name_text_box);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.login_butten);
             this.Controls.Add(this.password_erroe_picture);
             this.Controls.Add(this.user_name_error_picture);
             this.Controls.Add(this.password_error_massege);
@@ -166,6 +180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.password_erroe_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_name_error_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.login_form_background_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.password_correct_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,11 +191,12 @@
         private System.Windows.Forms.Label password_error_massege;
         private System.Windows.Forms.PictureBox user_name_error_picture;
         private System.Windows.Forms.PictureBox password_erroe_picture;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button login_butten;
         private System.Windows.Forms.PictureBox login_form_background_picture;
         private System.Windows.Forms.TextBox user_name_text_box;
         private System.Windows.Forms.TextBox password_txet_box;
         private System.Windows.Forms.PictureBox user_name_correct_picture;
+        private System.Windows.Forms.PictureBox password_correct_picture;
     }
 }
 

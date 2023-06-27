@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,10 +31,11 @@ namespace LPDA
             {
                 
                 bool UserNameIsCorrect = false;
+                string user_name_login = user_name_text_box.Text;
 
                 while (UserNameIsCorrect!= true)
                 {
-                    string user_name_login = user_name_text_box.Text;
+                    user_name_login = user_name_text_box.Text;
 
                     if (user_name_login != "ridma")
                     {
@@ -78,7 +80,30 @@ namespace LPDA
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if()
+                string password_login = password_txet_box.Text;
+                bool PasswordIsCorrect = false;
+                while (PasswordIsCorrect != true)
+                {
+                    password_login = password_txet_box.Text;
+                    if (password_login == "admin")
+                    {
+                        password_error_massege.Visible = false;
+                        password_erroe_picture.Visible = false;
+                        password_correct_picture.Visible=true;
+                        PasswordIsCorrect = true;
+                        login_butten.Focus();
+                        break;
+                    }
+                    else
+                    {
+                        password_error_massege.Visible = true;
+                        password_erroe_picture.Visible = true;
+                        password_txet_box.Clear();
+                        password_txet_box.Focus();
+                        break;
+                    }
+                }
+               
             }
         }
     }
