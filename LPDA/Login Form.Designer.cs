@@ -38,6 +38,7 @@
             this.user_name_error_picture = new System.Windows.Forms.PictureBox();
             this.login_form_background_picture = new System.Windows.Forms.PictureBox();
             this.password_correct_picture = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.user_name_correct_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.password_erroe_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_name_error_picture)).BeginInit();
@@ -159,11 +160,26 @@
             this.password_correct_picture.TabStop = false;
             this.password_correct_picture.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(462, 677);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 18);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Create Account";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1624, 881);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.password_correct_picture);
             this.Controls.Add(this.user_name_correct_picture);
             this.Controls.Add(this.password_txet_box);
@@ -197,6 +213,7 @@
         private System.Windows.Forms.TextBox password_txet_box;
         private System.Windows.Forms.PictureBox user_name_correct_picture;
         private System.Windows.Forms.PictureBox password_correct_picture;
+        private System.Windows.Forms.Label label1;
     }
 }
 

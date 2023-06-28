@@ -107,5 +107,17 @@ namespace LPDA
                
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the new form
+            create_account_form create_account_form = new create_account_form();
+
+            // Hide the current form
+            this.Hide();
+
+            // Show the new form
+            create_account_form.Show();
+        }
     }
 }
