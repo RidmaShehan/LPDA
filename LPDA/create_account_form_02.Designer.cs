@@ -28,43 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.zipcode_error_picture = new System.Windows.Forms.PictureBox();
+            this.background = new System.Windows.Forms.PictureBox();
             this.email_text = new System.Windows.Forms.TextBox();
             this.user_name_text = new System.Windows.Forms.TextBox();
             this.password_text = new System.Windows.Forms.TextBox();
             this.phone_number_text = new System.Windows.Forms.TextBox();
             this.zip_code_text = new System.Windows.Forms.TextBox();
-            this.confirm_password = new System.Windows.Forms.TextBox();
+            this.confirm_password_text = new System.Windows.Forms.TextBox();
             this.back_butten_form_02 = new System.Windows.Forms.Button();
             this.next_butten_form_02 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.phone_number_error_picture = new System.Windows.Forms.PictureBox();
             this.email_error_picture = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.zipcode_error_picture = new System.Windows.Forms.PictureBox();
             this.user_name_error_picture = new System.Windows.Forms.PictureBox();
             this.confirm_password_error_picture = new System.Windows.Forms.PictureBox();
             this.password_error_picture = new System.Windows.Forms.PictureBox();
             this.email_correct_picture = new System.Windows.Forms.PictureBox();
             this.phone_number_correct_picture = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.zipcode_error_picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.zipcode_correct_picture = new System.Windows.Forms.PictureBox();
+            this.user_name_correct_picture = new System.Windows.Forms.PictureBox();
+            this.password_correct_picture = new System.Windows.Forms.PictureBox();
+            this.confirm_password_correct_picture = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phone_number_error_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.email_error_picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zipcode_error_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_name_error_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.confirm_password_error_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.password_error_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.email_correct_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phone_number_correct_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zipcode_correct_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_name_correct_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.password_correct_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.confirm_password_correct_picture)).BeginInit();
             this.SuspendLayout();
             // 
-            // zipcode_error_picture
+            // background
             // 
-            this.zipcode_error_picture.Image = global::LPDA.Properties.Resources.registar_form_02;
-            this.zipcode_error_picture.Location = new System.Drawing.Point(0, 1);
-            this.zipcode_error_picture.Name = "zipcode_error_picture";
-            this.zipcode_error_picture.Size = new System.Drawing.Size(1623, 880);
-            this.zipcode_error_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zipcode_error_picture.TabIndex = 0;
-            this.zipcode_error_picture.TabStop = false;
+            this.background.Image = global::LPDA.Properties.Resources.registar_form_02;
+            this.background.Location = new System.Drawing.Point(0, 1);
+            this.background.Name = "background";
+            this.background.Size = new System.Drawing.Size(1623, 880);
+            this.background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.background.TabIndex = 0;
+            this.background.TabStop = false;
             // 
             // email_text
             // 
@@ -93,6 +101,7 @@
             this.password_text.Size = new System.Drawing.Size(417, 27);
             this.password_text.TabIndex = 1;
             this.password_text.TextChanged += new System.EventHandler(this.password_text_TextChanged);
+            this.password_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.password_text_KeyDown);
             // 
             // phone_number_text
             // 
@@ -111,16 +120,17 @@
             this.zip_code_text.Size = new System.Drawing.Size(417, 27);
             this.zip_code_text.TabIndex = 1;
             this.zip_code_text.TextChanged += new System.EventHandler(this.zip_code_text_TextChanged);
+            this.zip_code_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.zip_code_text_KeyDown);
             // 
-            // confirm_password
+            // confirm_password_text
             // 
-            this.confirm_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirm_password.Location = new System.Drawing.Point(892, 546);
-            this.confirm_password.Name = "confirm_password";
-            this.confirm_password.Size = new System.Drawing.Size(417, 27);
-            this.confirm_password.TabIndex = 1;
-            this.confirm_password.TextChanged += new System.EventHandler(this.confirm_password_TextChanged);
-            this.confirm_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.confirm_password_KeyDown);
+            this.confirm_password_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_password_text.Location = new System.Drawing.Point(892, 546);
+            this.confirm_password_text.Name = "confirm_password_text";
+            this.confirm_password_text.Size = new System.Drawing.Size(417, 27);
+            this.confirm_password_text.TabIndex = 1;
+            this.confirm_password_text.TextChanged += new System.EventHandler(this.confirm_password_TextChanged);
+            this.confirm_password_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.confirm_password_KeyDown);
             // 
             // back_butten_form_02
             // 
@@ -149,16 +159,16 @@
             this.next_butten_form_02.UseVisualStyleBackColor = false;
             this.next_butten_form_02.Click += new System.EventHandler(this.next_butten_form_02_Click);
             // 
-            // pictureBox2
+            // phone_number_error_picture
             // 
-            this.pictureBox2.Image = global::LPDA.Properties.Resources.error;
-            this.pictureBox2.Location = new System.Drawing.Point(879, 319);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(5, 59);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.phone_number_error_picture.Image = global::LPDA.Properties.Resources.error;
+            this.phone_number_error_picture.Location = new System.Drawing.Point(879, 319);
+            this.phone_number_error_picture.Name = "phone_number_error_picture";
+            this.phone_number_error_picture.Size = new System.Drawing.Size(5, 59);
+            this.phone_number_error_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.phone_number_error_picture.TabIndex = 3;
+            this.phone_number_error_picture.TabStop = false;
+            this.phone_number_error_picture.Visible = false;
             // 
             // email_error_picture
             // 
@@ -171,16 +181,16 @@
             this.email_error_picture.TabStop = false;
             this.email_error_picture.Visible = false;
             // 
-            // pictureBox1
+            // zipcode_error_picture
             // 
-            this.pictureBox1.Image = global::LPDA.Properties.Resources.error;
-            this.pictureBox1.Location = new System.Drawing.Point(879, 420);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(5, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.zipcode_error_picture.Image = global::LPDA.Properties.Resources.error;
+            this.zipcode_error_picture.Location = new System.Drawing.Point(879, 420);
+            this.zipcode_error_picture.Name = "zipcode_error_picture";
+            this.zipcode_error_picture.Size = new System.Drawing.Size(5, 59);
+            this.zipcode_error_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zipcode_error_picture.TabIndex = 3;
+            this.zipcode_error_picture.TabStop = false;
+            this.zipcode_error_picture.Visible = false;
             // 
             // user_name_error_picture
             // 
@@ -224,11 +234,12 @@
             this.email_correct_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.email_correct_picture.TabIndex = 3;
             this.email_correct_picture.TabStop = false;
+            this.email_correct_picture.Visible = false;
             // 
             // phone_number_correct_picture
             // 
             this.phone_number_correct_picture.Image = global::LPDA.Properties.Resources.ok;
-            this.phone_number_correct_picture.Location = new System.Drawing.Point(879, 319);
+            this.phone_number_correct_picture.Location = new System.Drawing.Point(878, 319);
             this.phone_number_correct_picture.Name = "phone_number_correct_picture";
             this.phone_number_correct_picture.Size = new System.Drawing.Size(5, 59);
             this.phone_number_correct_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,39 +247,91 @@
             this.phone_number_correct_picture.TabStop = false;
             this.phone_number_correct_picture.Visible = false;
             // 
+            // zipcode_correct_picture
+            // 
+            this.zipcode_correct_picture.Image = global::LPDA.Properties.Resources.ok;
+            this.zipcode_correct_picture.Location = new System.Drawing.Point(878, 420);
+            this.zipcode_correct_picture.Name = "zipcode_correct_picture";
+            this.zipcode_correct_picture.Size = new System.Drawing.Size(5, 59);
+            this.zipcode_correct_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zipcode_correct_picture.TabIndex = 3;
+            this.zipcode_correct_picture.TabStop = false;
+            this.zipcode_correct_picture.Visible = false;
+            // 
+            // user_name_correct_picture
+            // 
+            this.user_name_correct_picture.Image = global::LPDA.Properties.Resources.ok;
+            this.user_name_correct_picture.Location = new System.Drawing.Point(298, 420);
+            this.user_name_correct_picture.Name = "user_name_correct_picture";
+            this.user_name_correct_picture.Size = new System.Drawing.Size(5, 59);
+            this.user_name_correct_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.user_name_correct_picture.TabIndex = 3;
+            this.user_name_correct_picture.TabStop = false;
+            this.user_name_correct_picture.Visible = false;
+            // 
+            // password_correct_picture
+            // 
+            this.password_correct_picture.Image = global::LPDA.Properties.Resources.ok;
+            this.password_correct_picture.Location = new System.Drawing.Point(298, 521);
+            this.password_correct_picture.Name = "password_correct_picture";
+            this.password_correct_picture.Size = new System.Drawing.Size(5, 59);
+            this.password_correct_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.password_correct_picture.TabIndex = 3;
+            this.password_correct_picture.TabStop = false;
+            this.password_correct_picture.Visible = false;
+            // 
+            // confirm_password_correct_picture
+            // 
+            this.confirm_password_correct_picture.Image = global::LPDA.Properties.Resources.ok;
+            this.confirm_password_correct_picture.Location = new System.Drawing.Point(878, 521);
+            this.confirm_password_correct_picture.Name = "confirm_password_correct_picture";
+            this.confirm_password_correct_picture.Size = new System.Drawing.Size(5, 59);
+            this.confirm_password_correct_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.confirm_password_correct_picture.TabIndex = 3;
+            this.confirm_password_correct_picture.TabStop = false;
+            this.confirm_password_correct_picture.Visible = false;
+            // 
             // create_account_form_02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1624, 881);
+            this.Controls.Add(this.zipcode_correct_picture);
             this.Controls.Add(this.phone_number_correct_picture);
+            this.Controls.Add(this.confirm_password_correct_picture);
+            this.Controls.Add(this.password_correct_picture);
+            this.Controls.Add(this.user_name_correct_picture);
             this.Controls.Add(this.email_correct_picture);
             this.Controls.Add(this.email_error_picture);
             this.Controls.Add(this.user_name_error_picture);
             this.Controls.Add(this.password_error_picture);
             this.Controls.Add(this.confirm_password_error_picture);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.zipcode_error_picture);
+            this.Controls.Add(this.phone_number_error_picture);
             this.Controls.Add(this.next_butten_form_02);
             this.Controls.Add(this.back_butten_form_02);
-            this.Controls.Add(this.confirm_password);
+            this.Controls.Add(this.confirm_password_text);
             this.Controls.Add(this.password_text);
             this.Controls.Add(this.zip_code_text);
             this.Controls.Add(this.user_name_text);
             this.Controls.Add(this.phone_number_text);
             this.Controls.Add(this.email_text);
-            this.Controls.Add(this.zipcode_error_picture);
+            this.Controls.Add(this.background);
             this.Name = "create_account_form_02";
             this.Text = "create_account_form_02";
-            ((System.ComponentModel.ISupportInitialize)(this.zipcode_error_picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phone_number_error_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.email_error_picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zipcode_error_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_name_error_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.confirm_password_error_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.password_error_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.email_correct_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phone_number_correct_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zipcode_correct_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_name_correct_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.password_correct_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.confirm_password_correct_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,22 +339,26 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox zipcode_error_picture;
+        private System.Windows.Forms.PictureBox background;
         private System.Windows.Forms.TextBox email_text;
         private System.Windows.Forms.TextBox user_name_text;
         private System.Windows.Forms.TextBox password_text;
         private System.Windows.Forms.TextBox phone_number_text;
         private System.Windows.Forms.TextBox zip_code_text;
-        private System.Windows.Forms.TextBox confirm_password;
+        private System.Windows.Forms.TextBox confirm_password_text;
         private System.Windows.Forms.Button back_butten_form_02;
         private System.Windows.Forms.Button next_butten_form_02;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox phone_number_error_picture;
         private System.Windows.Forms.PictureBox email_error_picture;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox zipcode_error_picture;
         private System.Windows.Forms.PictureBox user_name_error_picture;
         private System.Windows.Forms.PictureBox confirm_password_error_picture;
         private System.Windows.Forms.PictureBox password_error_picture;
         private System.Windows.Forms.PictureBox email_correct_picture;
         private System.Windows.Forms.PictureBox phone_number_correct_picture;
+        private System.Windows.Forms.PictureBox zipcode_correct_picture;
+        private System.Windows.Forms.PictureBox user_name_correct_picture;
+        private System.Windows.Forms.PictureBox password_correct_picture;
+        private System.Windows.Forms.PictureBox confirm_password_correct_picture;
     }
 }
