@@ -83,6 +83,7 @@ namespace LPDA
                             //If text content has '@'. It is correct.
                             //Focusing on phone_number_tex.
                             email_error_picture.Visible = false;
+                            email_correct_picture.Visible = true;
                             phone_number_text.Focus();
                             EmailIsCorrect = true;
                         break;
@@ -93,6 +94,7 @@ namespace LPDA
                             EmailIsCorrect = false;
                             //To receive user input again, the focus is placed on that cell and the contents of the cell are cleared.
                             email_error_picture.Visible=true;
+                            email_correct_picture.Visible = false;
                             email_text.Clear();
                             email_text.Focus();
                         break;
@@ -119,6 +121,7 @@ namespace LPDA
                 while (PhoneNumberIsCorrect != true)
                 {
 
+
                 }
             }
         }
@@ -138,6 +141,7 @@ namespace LPDA
                 {
                     if (UserName == "")
                     {
+                        //
                         user_name_error_picture.Visible = true;
                         user_name_text.Focus();
                         UserNameIsCorrect = false; 
