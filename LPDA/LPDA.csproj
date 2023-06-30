@@ -84,6 +84,9 @@
     <EmbeddedResource Include="create_account_form_02.resx">
       <DependentUpon>create_account_form_02.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="create_account_form_03.resx">
+      <DependentUpon>create_account_form_03.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashboard_form.resx">
       <DependentUpon>dashboard_form.cs</DependentUpon>
     </EmbeddedResource>
