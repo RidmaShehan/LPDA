@@ -49,6 +49,8 @@
             this.user_name_correct_picture = new System.Windows.Forms.PictureBox();
             this.password_correct_picture = new System.Windows.Forms.PictureBox();
             this.confirm_password_correct_picture = new System.Windows.Forms.PictureBox();
+            this.enter_the_email_please_text = new System.Windows.Forms.Label();
+            this.enter_the_correct_email_please_text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phone_number_error_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.email_error_picture)).BeginInit();
@@ -107,6 +109,7 @@
             // 
             this.phone_number_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_number_text.Location = new System.Drawing.Point(892, 346);
+            this.phone_number_text.MaxLength = 10;
             this.phone_number_text.Name = "phone_number_text";
             this.phone_number_text.Size = new System.Drawing.Size(417, 27);
             this.phone_number_text.TabIndex = 1;
@@ -116,6 +119,7 @@
             // 
             this.zip_code_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zip_code_text.Location = new System.Drawing.Point(892, 448);
+            this.zip_code_text.MaxLength = 5;
             this.zip_code_text.Name = "zip_code_text";
             this.zip_code_text.Size = new System.Drawing.Size(417, 27);
             this.zip_code_text.TabIndex = 1;
@@ -144,6 +148,7 @@
             this.back_butten_form_02.TabIndex = 2;
             this.back_butten_form_02.Text = "B A C K";
             this.back_butten_form_02.UseVisualStyleBackColor = false;
+            this.back_butten_form_02.Click += new System.EventHandler(this.back_butten_form_02_Click);
             // 
             // next_butten_form_02
             // 
@@ -291,11 +296,39 @@
             this.confirm_password_correct_picture.TabStop = false;
             this.confirm_password_correct_picture.Visible = false;
             // 
+            // enter_the_email_please_text
+            // 
+            this.enter_the_email_please_text.AutoSize = true;
+            this.enter_the_email_please_text.BackColor = System.Drawing.Color.Transparent;
+            this.enter_the_email_please_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enter_the_email_please_text.ForeColor = System.Drawing.Color.Red;
+            this.enter_the_email_please_text.Location = new System.Drawing.Point(307, 386);
+            this.enter_the_email_please_text.Name = "enter_the_email_please_text";
+            this.enter_the_email_please_text.Size = new System.Drawing.Size(167, 18);
+            this.enter_the_email_please_text.TabIndex = 4;
+            this.enter_the_email_please_text.Text = "Enter The E-mail Please";
+            this.enter_the_email_please_text.Visible = false;
+            // 
+            // enter_the_correct_email_please_text
+            // 
+            this.enter_the_correct_email_please_text.AutoSize = true;
+            this.enter_the_correct_email_please_text.BackColor = System.Drawing.Color.Transparent;
+            this.enter_the_correct_email_please_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enter_the_correct_email_please_text.ForeColor = System.Drawing.Color.Red;
+            this.enter_the_correct_email_please_text.Location = new System.Drawing.Point(307, 386);
+            this.enter_the_correct_email_please_text.Name = "enter_the_correct_email_please_text";
+            this.enter_the_correct_email_please_text.Size = new System.Drawing.Size(221, 18);
+            this.enter_the_correct_email_please_text.TabIndex = 4;
+            this.enter_the_correct_email_please_text.Text = "Enter The Correct E-mail Please";
+            this.enter_the_correct_email_please_text.Visible = false;
+            // 
             // create_account_form_02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1624, 881);
+            this.Controls.Add(this.enter_the_correct_email_please_text);
+            this.Controls.Add(this.enter_the_email_please_text);
             this.Controls.Add(this.zipcode_correct_picture);
             this.Controls.Add(this.phone_number_correct_picture);
             this.Controls.Add(this.confirm_password_correct_picture);
@@ -360,5 +393,7 @@
         private System.Windows.Forms.PictureBox user_name_correct_picture;
         private System.Windows.Forms.PictureBox password_correct_picture;
         private System.Windows.Forms.PictureBox confirm_password_correct_picture;
+        private System.Windows.Forms.Label enter_the_email_please_text;
+        private System.Windows.Forms.Label enter_the_correct_email_please_text;
     }
 }

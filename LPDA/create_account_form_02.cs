@@ -16,12 +16,15 @@ namespace LPDA
 {
     public partial class create_account_form_02 : Form
     {
+       
         public string Email;
         public string PhoneNumber;
         public string UserName;
         public string Password;
         public string ZipCode;
         public string TempPassword;
+        // Create an instance of the create_account_form_02
+        create_account_form create_account_form = new create_account_form();
 
         public create_account_form_02()
         {
@@ -40,15 +43,15 @@ namespace LPDA
 
                 using (StreamWriter writer = new StreamWriter(filePath))
                 {
-                    // Write the registration data to the file
-                    /*
-                    writer.WriteLine($"Surname: {num1}");
-                    writer.WriteLine($"First Name: {FirstName}");
-                    writer.WriteLine($"Second Name: {SecondName}");
-                    writer.WriteLine($"ID Number: {IDNumber}");
-                    writer.WriteLine($"Date Of Birth : {DateOfBirth}");
-                    writer.WriteLine($"Gender : {Gender}");*/
-
+                    // ...Write the registration data to the file...
+                    
+                    writer.WriteLine($"Surname: {create_account_form.Surname}"); 
+                    writer.WriteLine($"First Name: {create_account_form.FirstName}");
+                    writer.WriteLine($"Second Name: {create_account_form.SecondName}");
+                    writer.WriteLine($"ID Number: {create_account_form.IDNumber}");
+                    writer.WriteLine($"Date Of Birth : {create_account_form.DateOfBirth}");
+                    writer.WriteLine($"Gender : {create_account_form.Gender}");
+                    // ...second form...
                     writer.WriteLine($"Email: {Email}");
                     writer.WriteLine($"Phone Number: {PhoneNumber}");
                     writer.WriteLine($"ZipCode: {ZipCode}");
@@ -58,7 +61,7 @@ namespace LPDA
                     writer.WriteLine();
                 }
 
-                // Display a success message
+                // ...Display a success message...
                 string message = "Registration data saved successfully.";
                 MessageBox.Show(message, "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -67,13 +70,13 @@ namespace LPDA
 
         private void email_text_KeyDown(object sender, KeyEventArgs e)
         {
-            // add keyDown event for press Enter Key.
+            // ...add keyDown event for press Enter Key...
             if (e.KeyCode == Keys.Enter)
             {
-                // make boolean variable as "EmailIsCorrect" , for controlling the while loop.
+                // ...make boolean variable as "EmailIsCorrect" , for controlling the while loop...
                 Boolean EmailIsCorrect = false;
 
-                // The value of "email_text" is assigned to the variable  "Email".
+                // ...The value of "email_text" is assigned to the variable  "Email"...
                 Email = email_text.Text;
                 
                 while (EmailIsCorrect!=true)
@@ -81,13 +84,17 @@ namespace LPDA
                     if (Email == "")
                     {
                         email_error_picture.Visible = true;
+                        enter_the_email_please_text.Visible = true;
+                        EmailIsCorrect = false;
+                        break;
                     }
                     else 
                     {
                         if (Email.Contains("@"))
                         {
-                            //If text content has '@'. It is correct.
-                            //Focusing on phone_number_tex.
+                            // ...If text content has '@'. It is correct...
+                            // ...Focusing on phone_number_tex...
+                            enter_the_email_please_text.Visible = false;
                             email_error_picture.Visible = false;
                             email_correct_picture.Visible = true;
                             phone_number_text.Focus();
@@ -96,9 +103,10 @@ namespace LPDA
                         }
                         else
                         {
-                            //If text content hasn't '@'. It is incorrect.
+                            // ...If text content hasn't '@'. It is incorrect...
                             EmailIsCorrect = false;
-                            //To receive user input again, the focus is placed on that cell and the contents of the cell are cleared.
+                            // ...To receive user input again, the focus is placed on that cell and the contents of the cell are cleared...
+                            enter_the_email_please_text.Visible = false;
                             email_error_picture.Visible = true;
                             email_correct_picture.Visible = false;
                             email_text.Clear();
@@ -118,13 +126,13 @@ namespace LPDA
         private void phone_number_text_KeyDown(object sender, KeyEventArgs e)
         {
 
-            // add keyDown event for press Enter Key.
+            // ...add keyDown event for press Enter Key....
             if (e.KeyCode == Keys.Enter)
             {
-                // make boolean variable as " PhoneNumberIsCorrect" , for controlling the while loop.
+                // ...make boolean variable as " PhoneNumberIsCorrect" , for controlling the while loop...
                 Boolean PhoneNumberIsCorrect = false;
 
-                // The value of "phone_number_text" is assigned to the variable  "PhoneNumber".
+                // ...The value of "phone_number_text" is assigned to the variable  "PhoneNumber"...
                 PhoneNumber = phone_number_text.Text;
 
 
@@ -132,7 +140,7 @@ namespace LPDA
                     {
                         if (PhoneNumber=="")
                         {
-                            // phone_number_text is empty....
+                            // ...phone_number_text is empty....
 
                             phone_number_error_picture.Visible = true;
                             phone_number_correct_picture.Visible = false;                           
@@ -142,9 +150,9 @@ namespace LPDA
                         }
                         else
                         {
-                            // Does the phone number have ten digits?...
-                            // And check whether the first digit of the phone number is a zero?,...
-                            // and whether all the included characters are numbers....
+                            // ...Does the phone number have ten digits?...
+                            // ...And check whether the first digit of the phone number is a zero?,...
+                            // ...and whether all the included characters are numbers....
                             if (PhoneNumber.Length == 10 && PhoneNumber.All(char.IsDigit) && PhoneNumber[0] == '0')
                             {
 
@@ -366,6 +374,19 @@ namespace LPDA
                     }
                 }
             }
+        }
+
+        private void back_butten_form_02_Click(object sender, EventArgs e)
+        {
+            
+
+            // Hide the create_account_form
+            this.Hide();
+
+            // Show the create_account_form_02
+            create_account_form.Show();
+
+            
         }
     }
 }

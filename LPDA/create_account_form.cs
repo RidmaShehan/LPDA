@@ -202,6 +202,7 @@ namespace LPDA
                         ID_number_error_picture.Visible = true;
                         label4.Visible = true;
                         IDNumberIsCorrect = false;
+                        break;
 
                     }
                     else if (IDNumber.Length == 12 && IDNumber.All(char.IsDigit))
@@ -210,6 +211,8 @@ namespace LPDA
                             label4.Visible = false;
                             label7.Visible = false;
                             id_correct_picture.Visible= true;
+                            IDNumberIsCorrect=true; 
+                            break;
                         }
                         else if (IDNumber.Length == 10 && IDNumber.Contains('v'))
                             {
@@ -259,6 +262,11 @@ namespace LPDA
         }
 
         private void dateTimePicker1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void ID_number_text_box_TextChanged(object sender, EventArgs e)
         {
 
         }

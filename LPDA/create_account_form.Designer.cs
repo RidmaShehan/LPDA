@@ -99,9 +99,11 @@
             // 
             this.ID_number_text_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ID_number_text_box.Location = new System.Drawing.Point(896, 348);
+            this.ID_number_text_box.MaxLength = 12;
             this.ID_number_text_box.Name = "ID_number_text_box";
             this.ID_number_text_box.Size = new System.Drawing.Size(418, 27);
             this.ID_number_text_box.TabIndex = 1;
+            this.ID_number_text_box.TextChanged += new System.EventHandler(this.ID_number_text_box_TextChanged);
             this.ID_number_text_box.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ID_number_text_box_KeyDown);
             // 
             // dateTimePicker1
@@ -111,6 +113,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 6, 29, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             this.dateTimePicker1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateTimePicker1_KeyDown);
             // 
