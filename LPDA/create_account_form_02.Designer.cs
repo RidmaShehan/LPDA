@@ -146,6 +146,7 @@
             this.back_butten_form_02.TabIndex = 2;
             this.back_butten_form_02.Text = "B A C K";
             this.back_butten_form_02.UseVisualStyleBackColor = false;
+            this.back_butten_form_02.Click += new System.EventHandler(this.back_butten_form_02_Click);
             // 
             // next_butten_form_02
             // 

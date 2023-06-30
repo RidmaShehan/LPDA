@@ -16,6 +16,9 @@ namespace LPDA
 {
     public partial class create_account_form_02 : Form
     {
+        // Create an instance of the create_account_form_02
+        create_account_form create_account_form = new create_account_form();
+
         public string Email;
         public string PhoneNumber;
         public string UserName;
@@ -41,14 +44,15 @@ namespace LPDA
                 using (StreamWriter writer = new StreamWriter(filePath))
                 {
                     // Write the registration data to the file
-                    /*
-                    writer.WriteLine($"Surname: {num1}");
-                    writer.WriteLine($"First Name: {FirstName}");
-                    writer.WriteLine($"Second Name: {SecondName}");
-                    writer.WriteLine($"ID Number: {IDNumber}");
-                    writer.WriteLine($"Date Of Birth : {DateOfBirth}");
-                    writer.WriteLine($"Gender : {Gender}");*/
+                    
+                    writer.WriteLine($"Surname: {create_account_form.Surname}");
+                    writer.WriteLine($"First Name: {create_account_form.FirstName}");
+                    writer.WriteLine($"Second Name: {create_account_form.SecondName}");
+                    writer.WriteLine($"ID Number: {create_account_form.IDNumber}");
+                    writer.WriteLine($"Date Of Birth : {create_account_form.DateOfBirth}");
+                    writer.WriteLine($"Gender : {create_account_form.Gender}");
 
+                    //this form 
                     writer.WriteLine($"Email: {Email}");
                     writer.WriteLine($"Phone Number: {PhoneNumber}");
                     writer.WriteLine($"ZipCode: {ZipCode}");
@@ -366,6 +370,17 @@ namespace LPDA
                     }
                 }
             }
+        }
+
+        private void back_butten_form_02_Click(object sender, EventArgs e)
+        {
+            
+
+            // Hide the create_account_form
+            this.Hide();
+
+            // Show the create_account_form_02
+            create_account_form.Show();
         }
     }
 }
