@@ -107,6 +107,7 @@
             // 
             this.phone_number_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_number_text.Location = new System.Drawing.Point(892, 346);
+            this.phone_number_text.MaxLength = 10;
             this.phone_number_text.Name = "phone_number_text";
             this.phone_number_text.Size = new System.Drawing.Size(417, 27);
             this.phone_number_text.TabIndex = 1;
@@ -116,6 +117,7 @@
             // 
             this.zip_code_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zip_code_text.Location = new System.Drawing.Point(892, 448);
+            this.zip_code_text.MaxLength = 5;
             this.zip_code_text.Name = "zip_code_text";
             this.zip_code_text.Size = new System.Drawing.Size(417, 27);
             this.zip_code_text.TabIndex = 1;

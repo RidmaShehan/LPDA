@@ -202,24 +202,33 @@ namespace LPDA
                         ID_number_error_picture.Visible = true;
                         label4.Visible = true;
                         IDNumberIsCorrect = false;
+                        break;
 
                     }
-                    else if (IDNumber.Length == 12 && IDNumber.All(char.IsDigit))
-                        {
-                           ID_number_error_picture.Visible = false;
-                            label4.Visible = false;
-                            label7.Visible = false;
-                            id_correct_picture.Visible= true;
-                        }
-                        else if (IDNumber.Length == 10 && IDNumber.Contains('v'))
-                            {
+                    else 
+                    {
 
+                        if (IDNumber.Length == 12 && IDNumber.All(char.IsDigit))
+                        {
+                             ID_number_error_picture.Visible = false;
+                                label4.Visible = false;
+                                label7.Visible = false;
+                                id_correct_picture.Visible = true;
+                                IDNumberIsCorrect = true;
+                                break;
+                        }
+                        else
+                        {
+                            if (IDNumber.Length == 10 && IDNumber.Contains('v'))
+                            {
                                 for (int i = 0; i < 9; i++)
                                 {
-                                    if (char.IsDigit(IDNumber[i]))
+                                    if (!char.IsDigit(IDNumber[i]))
                                     {
                                         ID_number_error_picture.Visible = true;
                                         label7.Visible = true;
+                                        ID_number_text_box.Clear();
+                                        ID_number_text_box.Focus();
                                         IDNumberIsCorrect = false;
                                         break;
                                     }
@@ -233,11 +242,24 @@ namespace LPDA
                                         IDNumberIsCorrect = true;
                                         break;
                                     }
-
                                 }
+
+                            }
+                            else
+                            {
+                                ID_number_error_picture.Visible = true;
+                                label7.Visible = true;
+                                IDNumberIsCorrect = false;
+                                break;
+                            }
+                        }
+
+                    }
+                        
+                                     
                           
                                 
-                            }
+                
                       
                         
 
@@ -259,6 +281,11 @@ namespace LPDA
         }
 
         private void dateTimePicker1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void ID_number_text_box_TextChanged(object sender, EventArgs e)
         {
 
         }
