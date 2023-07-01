@@ -22,7 +22,7 @@ namespace LPDA.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace LPDA.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LPDA.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace LPDA.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap error {
+        public static System.Drawing.Bitmap error {
             get {
                 object obj = ResourceManager.GetObject("error", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap law_login_form {
+        public static System.Drawing.Bitmap law_login_form {
             get {
                 object obj = ResourceManager.GetObject("law login form", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,15 +83,9 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-
-        internal static System.Drawing.Bitmap pic_6 {
-            get {
-                object obj = ResourceManager.GetObject("pic 6", resourceCulture);
-
-        internal static System.Drawing.Bitmap law_login_form1 {
+        public static System.Drawing.Bitmap law_login_form1 {
             get {
                 object obj = ResourceManager.GetObject("law login form1", resourceCulture);
-
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -99,15 +93,9 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-
-        internal static System.Drawing.Bitmap pic2 {
-            get {
-                object obj = ResourceManager.GetObject("pic2", resourceCulture);
-
-        internal static System.Drawing.Bitmap ok {
+        public static System.Drawing.Bitmap ok {
             get {
                 object obj = ResourceManager.GetObject("ok", resourceCulture);
-
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,15 +103,29 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-
-        internal static System.Drawing.Bitmap pic3 {
+        public static System.Drawing.Bitmap pic_6 {
+            get {
+                object obj = ResourceManager.GetObject("pic 6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pic2 {
+            get {
+                object obj = ResourceManager.GetObject("pic2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pic3 {
             get {
                 object obj = ResourceManager.GetObject("pic3", resourceCulture);
-
-        internal static System.Drawing.Bitmap registar_form_ {
-            get {
-                object obj = ResourceManager.GetObject("registar form ", resourceCulture);
-
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -131,8 +133,7 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-
-        internal static System.Drawing.Bitmap pic4 {
+        public static System.Drawing.Bitmap pic4 {
             get {
                 object obj = ResourceManager.GetObject("pic4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -142,7 +143,7 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pic5 {
+        public static System.Drawing.Bitmap pic5 {
             get {
                 object obj = ResourceManager.GetObject("pic5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -152,7 +153,7 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pic5_copy {
+        public static System.Drawing.Bitmap pic5_copy {
             get {
                 object obj = ResourceManager.GetObject("pic5 copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -162,7 +163,7 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pic51 {
+        public static System.Drawing.Bitmap pic51 {
             get {
                 object obj = ResourceManager.GetObject("pic51", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -172,7 +173,7 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pic52 {
+        public static System.Drawing.Bitmap pic52 {
             get {
                 object obj = ResourceManager.GetObject("pic52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -182,14 +183,29 @@ namespace LPDA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap x {
+        public static System.Drawing.Bitmap registar_form_ {
             get {
-                object obj = ResourceManager.GetObject("x", resourceCulture);
-
-        internal static System.Drawing.Bitmap registar_form_02 {
+                object obj = ResourceManager.GetObject("registar form ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap registar_form_02 {
             get {
                 object obj = ResourceManager.GetObject("registar form 02", resourceCulture);
-
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap x {
+            get {
+                object obj = ResourceManager.GetObject("x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

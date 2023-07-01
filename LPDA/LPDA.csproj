@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="client_registration form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,7 +67,7 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
-
+    </Compile>
     <Compile Include="create_account_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,7 +91,6 @@
     </Compile>
     <Compile Include="dashboard_form.Designer.cs">
       <DependentUpon>dashboard_form.cs</DependentUpon>
-
     </Compile>
     <Compile Include="Login Form.cs">
       <SubType>Form</SubType>
@@ -104,7 +106,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <EmbeddedResource Include="client_registration form.resx">
       <DependentUpon>client_registration form.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,7 +114,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
-
+    </EmbeddedResource>
     <EmbeddedResource Include="create_account_form.resx">
       <DependentUpon>create_account_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,7 +126,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dashboard_form.resx">
       <DependentUpon>dashboard_form.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Login Form.resx">
       <DependentUpon>Login Form.cs</DependentUpon>
@@ -134,7 +134,7 @@
       <DependentUpon>peronal_detail_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -160,7 +160,6 @@
     <None Include="Resources\law login form.png" />
   </ItemGroup>
   <ItemGroup>
-
     <None Include="Resources\pic4.png" />
   </ItemGroup>
   <ItemGroup>
@@ -186,7 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\x.png" />
-
     <None Include="Resources\error.png" />
   </ItemGroup>
   <ItemGroup>
@@ -200,7 +198,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\registar form 02.png" />
-
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
