@@ -85,6 +85,8 @@ namespace LPDA
                     if (Email == "")
                     {
                         email_error_picture.Visible = true;
+                        enter_the_correct_email.Visible = false;
+                        enter_the_email.Visible = true;
                     }
                     else 
                     {
@@ -94,6 +96,7 @@ namespace LPDA
                             //Focusing on phone_number_tex.
                             email_error_picture.Visible = false;
                             email_correct_picture.Visible = true;
+                            enter_the_email.Visible = false;
                             phone_number_text.Focus();
                             EmailIsCorrect = true;
                             break;
@@ -105,6 +108,8 @@ namespace LPDA
                             //To receive user input again, the focus is placed on that cell and the contents of the cell are cleared.
                             email_error_picture.Visible = true;
                             email_correct_picture.Visible = false;
+                            enter_the_email.Visible=false;
+                            enter_the_correct_email.Visible = true;
                             email_text.Clear();
                             email_text.Focus();
                             break;
@@ -139,7 +144,9 @@ namespace LPDA
                             // phone_number_text is empty....
 
                             phone_number_error_picture.Visible = true;
-                            phone_number_correct_picture.Visible = false;                           
+                            phone_number_correct_picture.Visible = false; 
+                            enter_the_correct_phone_number.Visible = false;
+                            enter_the_phone_number.Visible=true;
                             phone_number_text.Focus();
                             PhoneNumberIsCorrect = true;
                             break;
@@ -155,6 +162,8 @@ namespace LPDA
                                 //Correct phone number...
                                 phone_number_error_picture.Visible = false; 
                                 phone_number_correct_picture.Visible = true;
+                                enter_the_correct_phone_number.Visible=false;
+                                enter_the_phone_number.Visible = false;
                                 user_name_text.Focus();
                                 PhoneNumberIsCorrect=true;
                                 break;
@@ -164,6 +173,8 @@ namespace LPDA
                                 //Incorrect phone number...
                                 phone_number_correct_picture.Visible = false;
                                 phone_number_error_picture.Visible = true; 
+                                enter_the_correct_phone_number.Visible = true;
+                                enter_the_phone_number.Visible = false;
                                 phone_number_text.Focus();
                                 phone_number_text.Clear();
 
@@ -198,6 +209,7 @@ namespace LPDA
                         //
                         user_name_error_picture.Visible = true;
                         user_name_correct_picture.Visible = false;
+                        enter_the_user_name.Visible = true;
                         user_name_text.Focus();
                         UserNameIsCorrect = false; 
                         break;
@@ -206,6 +218,7 @@ namespace LPDA
                     {
                         user_name_error_picture.Visible = false;
                         user_name_correct_picture.Visible=true;
+                        enter_the_user_name.Visible=false;
                         zip_code_text.Focus();
                         UserNameIsCorrect=false;
                         break;
@@ -299,6 +312,8 @@ namespace LPDA
                         // ..."zip_code_text" text box is empty...
                         zipcode_error_picture.Visible = true;
                         zipcode_correct_picture.Visible = false;
+                        enter_the_zipcode.Visible = true;
+                        enter_the_correct_zipcode.Visible = false;  
                         zip_code_text.Focus();
                         ZipCodeIsCorrect = false;
                         break;
@@ -310,6 +325,8 @@ namespace LPDA
                         {
                             zipcode_error_picture.Visible = false;
                             zipcode_correct_picture.Visible = true;
+                            enter_the_correct_zipcode.Visible = false;
+                            enter_the_zipcode.Visible= false;
                             password_text.Focus();
                             ZipCodeIsCorrect = true;
                             break;
@@ -318,6 +335,8 @@ namespace LPDA
                         {
                             zipcode_error_picture.Visible = true;
                             zipcode_correct_picture.Visible= false;
+                            enter_the_zipcode.Visible = false;
+                            enter_the_correct_zipcode.Visible = true;
                             zip_code_text.Clear();
                             zip_code_text.Focus();
                             ZipCodeIsCorrect = false;
@@ -345,6 +364,7 @@ namespace LPDA
                     if ( Password == "" )
                     {
                         password_error_picture.Visible = true;
+                        enter_the_password.Visible = true;
                         password_text.Focus();
                         PasswordIsCorrect = false;
                         break;
@@ -356,6 +376,7 @@ namespace LPDA
                         {
                             password_error_picture.Visible = false;
                             password_correct_picture.Visible = true;
+                            enter_the_password.Visible = false;
                             confirm_password_text.Focus();
                             PasswordIsCorrect = true;
                             break;
@@ -364,6 +385,7 @@ namespace LPDA
                         {
                             password_correct_picture.Visible = false;
                             password_error_picture.Visible = true;
+                            enter_the_password.Visible=false;
                             password_text.Clear();
                             password_text.Focus();
                         }
@@ -381,6 +403,42 @@ namespace LPDA
 
             // Show the create_account_form_02
             create_account_form.Show();
+        }
+
+        private void email_text_Click(object sender, EventArgs e)
+        {
+            email_text.Text=string.Empty;
+            email_text.ForeColor = Color.Black;
+        }
+
+        private void phone_number_text_Click(object sender, EventArgs e)
+        {
+            password_text.Text=string.Empty;
+            password_text.ForeColor = Color.Black;
+        }
+
+        private void user_name_text_Click(object sender, EventArgs e)
+        {
+            phone_number_text.Text=string.Empty;
+            phone_number_text.ForeColor=Color.Black;
+        }
+
+        private void zip_code_text_Click(object sender, EventArgs e)
+        {
+            zip_code_text.Text=string.Empty;   
+            zip_code_text.ForeColor=Color.Black;
+        }
+
+        private void password_text_Click(object sender, EventArgs e)
+        {
+            password_text.Text = string.Empty;
+            password_text.ForeColor = Color.Black;
+        }
+
+        private void confirm_password_text_Click(object sender, EventArgs e)
+        {
+            confirm_password_text.Text = string.Empty;
+            confirm_password_text.ForeColor =Color.Black;
         }
     }
 }

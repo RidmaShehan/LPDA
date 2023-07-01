@@ -289,5 +289,34 @@ namespace LPDA
         {
 
         }
+
+        private void Surname_txet_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Surname_txet_box_Click(object sender, EventArgs e)
+        {
+            Surname_txet_box.Text = string.Empty;
+            Surname_txet_box.ForeColor = Color.Black;
+        }
+
+        private void ID_number_text_box_Click(object sender, EventArgs e)
+        {
+            ID_number_text_box.Text = string.Empty;
+            ID_number_text_box.ForeColor = Color.Black;
+        }
+
+        private void first_name_text_box_Click(object sender, EventArgs e)
+        {
+            first_name_text_box.Text = string.Empty;
+            first_name_text_box.ForeColor = Color.Black;
+        }
+
+        private void second_name_text_box_Click(object sender, EventArgs e)
+        {
+            second_name_text_box.Text = string.Empty;
+            second_name_text_box.ForeColor= Color.Black;
+        }
     }
 }

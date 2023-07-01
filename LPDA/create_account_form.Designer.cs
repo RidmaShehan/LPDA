@@ -71,38 +71,51 @@
             // Surname_txet_box
             // 
             this.Surname_txet_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Surname_txet_box.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.Surname_txet_box.Location = new System.Drawing.Point(314, 348);
             this.Surname_txet_box.Name = "Surname_txet_box";
             this.Surname_txet_box.Size = new System.Drawing.Size(418, 27);
             this.Surname_txet_box.TabIndex = 1;
+            this.Surname_txet_box.Text = "Enter Your Surname ";
+            this.Surname_txet_box.Click += new System.EventHandler(this.Surname_txet_box_Click);
+            this.Surname_txet_box.TextChanged += new System.EventHandler(this.Surname_txet_box_TextChanged);
             this.Surname_txet_box.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Surname_txet_box_KeyDown);
             // 
             // first_name_text_box
             // 
             this.first_name_text_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.first_name_text_box.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.first_name_text_box.Location = new System.Drawing.Point(314, 449);
             this.first_name_text_box.Name = "first_name_text_box";
             this.first_name_text_box.Size = new System.Drawing.Size(418, 27);
             this.first_name_text_box.TabIndex = 1;
+            this.first_name_text_box.Text = "example";
+            this.first_name_text_box.Click += new System.EventHandler(this.first_name_text_box_Click);
             this.first_name_text_box.KeyDown += new System.Windows.Forms.KeyEventHandler(this.first_name_text_box_KeyDown);
             // 
             // second_name_text_box
             // 
             this.second_name_text_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.second_name_text_box.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.second_name_text_box.Location = new System.Drawing.Point(314, 551);
             this.second_name_text_box.Name = "second_name_text_box";
             this.second_name_text_box.Size = new System.Drawing.Size(418, 27);
             this.second_name_text_box.TabIndex = 1;
+            this.second_name_text_box.Text = "example";
+            this.second_name_text_box.Click += new System.EventHandler(this.second_name_text_box_Click);
             this.second_name_text_box.KeyDown += new System.Windows.Forms.KeyEventHandler(this.second_name_text_box_KeyDown);
             // 
             // ID_number_text_box
             // 
             this.ID_number_text_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_number_text_box.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.ID_number_text_box.Location = new System.Drawing.Point(896, 348);
             this.ID_number_text_box.MaxLength = 12;
             this.ID_number_text_box.Name = "ID_number_text_box";
             this.ID_number_text_box.Size = new System.Drawing.Size(418, 27);
             this.ID_number_text_box.TabIndex = 1;
+            this.ID_number_text_box.Text = "123456789v & 123456789123";
+            this.ID_number_text_box.Click += new System.EventHandler(this.ID_number_text_box_Click);
             this.ID_number_text_box.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ID_number_text_box_KeyDown);
             // 
             // dateTimePicker1
@@ -249,7 +262,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(888, 385);
+            this.label7.Location = new System.Drawing.Point(888, 386);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(205, 18);
             this.label7.TabIndex = 5;
